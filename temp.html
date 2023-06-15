@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>temp</title>
+   <link rel="stylesheet" href="temp.css">
+</head>
+
+<body>
+   <div id="text"></div>
+   <div id="subtext"></div>
+   <script>
+      var i=0,j=0,text1,text2;
+      text1="HI MY NAME IS RAJAT KATNA";
+      text2="I WANT TO HAVE A GOOD JOB OF 20LPA ATLEAST"
+      function typing(){
+         if(i<text1.length){
+            document.getElementById("text").innerHTML+=text1.charAt(i);
+            i++;
+            setTimeout(typing,100);
+         }
+         if(i==text.length){
+            setTimeout(type,3000);
+         }
+      }
+      typing;
+      function type(){
+         if(j<text2.length){
+            document.getElementById("subtext").innerHTML+=text2.charAt(j);
+            j++;
+            setTimeout(type,120);
+         }
+      }
+   </script>
+</body>
+
+</html>

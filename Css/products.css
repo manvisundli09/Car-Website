@@ -1,0 +1,713 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+.h-primary {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+.p-primary {
+    color: white;
+    font-family: 'Abel', sans-serif;
+}
+
+span {
+    font-family: 'Dancing Script', cursive;
+    color: red;
+}
+
+.container {
+    max-width: 100% !important;
+    padding: 0px !important;
+}
+
+/*************** NAVBAR********* */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 14px;
+    align-items: center;
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+
+
+#navbar #logo li a{
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 25px;
+}
+#navbar #logo span{
+    color: red !important;
+    opacity: 0;
+    position: relative;
+    font-weight: 900;
+    animation-name: zoom-in;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom-in {
+    from {
+        opacity: 1;
+        left: -100px;
+    }
+
+    to {
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+.options {
+    display: flex;
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+.options li a {
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    padding: 0.1rem 0.5rem;
+    color: white;
+    border-radius: 30px;
+    margin: 0px 5px;
+    transition: 0.5s;
+}
+
+.options li a:hover {
+    /* font-family: 'Dancing Script', cursive; */
+    color: red;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.h-home {
+    opacity: 0;
+    position: relative;
+    animation-name: move-in;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+.h-about {
+    opacity: 0;
+    position: relative;
+    animation-name: move-in;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+.h-products {
+
+    opacity: 0;
+    position: relative;
+    animation-name: move-in;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+.h-services {
+    opacity: 0;
+    position: relative;
+    animation-name: move-in;
+    animation-delay: 1.6s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+.h-contact {
+    opacity: 0;
+    position: relative;
+    animation-name: move-in;
+    animation-delay: 1.8s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+@keyframes move-in {
+    from {
+        opacity: 1;
+        right: -1000px;
+    }
+
+    to {
+        opacity: 1;
+        right: 0px;
+    }
+}
+
+/******************* PRODUCTS MAIN **********************/
+
+#products-main {
+    background-image: url('../images/products-main.jpg');
+    width: 100%;
+    padding-top: 38rem;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation-name: wallpaper;
+    animation-delay: 5s;
+    animation-duration: 20s;
+    /* animation-fill-mode:ease-in-out; */
+    animation-iteration-count: infinite;
+    transition: 0.9s;
+}
+
+@keyframes wallpaper {
+    0% {
+        background-image: url('../images/products-main.jpg');
+    }
+
+    25% {
+        background-image: url('../images/second.jpg');
+    }
+
+    50% {
+        background-image: url('../images/products-main-4.jpg');
+    }
+
+    75% {
+        background-image: url('../images/products-main-3.jpg');
+    }
+
+    100% {
+        background-image: url('../images/products-main.jpg');
+    }
+}
+
+#products-main .text-main {
+    position: absolute;
+    top: 150px;
+
+}
+
+#products-main .text-main .h-primary {
+    transition: 0.9s;
+}
+
+
+/*************** SECOND SECTION ***************/
+
+
+#buying-car {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#buying-car .text-second-main .heading-second {
+    padding: 30px 0px;
+}
+
+#buying-car .text-second-main .text-second {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#buying-car .text-second-main .text-second .offers {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#buying-car .text-second-main .text-second .item {
+    list-style-type: none;
+    /* border: 2px dotted red; */
+    margin: 20px;
+}
+
+#buying-car .text-second-main .text-second li {
+    font-size: 1.5rem;
+    font-weight: 200;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    border-radius: 10px;
+    padding-right: 20px;
+}
+
+#buying-car .text-second-main .text-second i {
+    font-size: 2.2rem;
+    color: tomato;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+#buying-car .text-second-main .text-second #item-1 i {
+    padding: 10px 14px;
+}
+
+#buying-car .text-second-main .text-second #item-3 i {
+    padding: 10px 12px;
+}
+
+#buying-car .text-second-main .text-second #item-4 i {
+    padding: 10px 8px;
+}
+
+#buying-car .text-second video{
+    border-radius:40%;
+}
+
+/********************* THIRD SECTION *************/
+
+.third {
+    display: flex;
+    padding: 0px 70px 0px 70px;
+    background-color: black;
+}
+
+.third .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+
+.third .left .searchbar input{
+    width: 70%;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    background-color: grey;
+    color: white;
+    font-style: italic;
+    font-weight: 500;
+    padding: 10px;
+}
+.third .left .searchbar i{
+    color: white;
+    font-size: 1.3rem;
+    margin-left:15px;
+    padding:10px;
+    border-radius: 50%;
+    background-color: tomato;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    cursor: pointer;
+    transition: 0.9s;
+}
+.third .left .searchbar i:hover{
+    transform: scale(1.2);
+}
+
+.third .right {
+    width: 42%;
+    margin: 0;
+    padding: 50px 0px 0px 0px;
+}
+
+.imgs {
+    width: 45%;
+}
+
+.third .right img{
+    transition: 0.9s;
+}
+
+.third .right img:hover{
+    width: 42%;
+}
+
+#img-1{
+    position: relative;
+    border-top-left-radius: 30px;
+    border-bottom: 4px solid black;
+    animation-name: display;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    opacity: 0;
+    top: 340px;
+    left: 94px;
+    z-index: 0;
+}
+#img-2{
+    border-top-right-radius:30px;
+    position: relative;
+    border-bottom: 4px solid black;
+    animation-name: display;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    opacity: 0;
+    top: 340px;
+    right: 44px;
+    z-index: 0;
+}
+#img-3{
+    position: relative;
+    border-bottom: 4px solid black;
+    animation-name: display;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    opacity: 0;
+    top: 200px;
+    left: 94px;
+    z-index: 0;
+}
+#img-4{
+    position: relative;
+    border-bottom: 4px solid black;
+    animation-name: display;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    opacity: 0;
+    top: 200px;
+    right: 44px;
+    z-index: 0;
+}
+#img-5{
+    border-bottom-left-radius:30px;
+    position: relative;
+    border-bottom: 4px solid black;
+    animation-name: display;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    opacity: 0;
+    top: 100px;
+    left: 94px;
+    z-index: 0;
+}
+#img-6{
+    border-bottom-left-radius:30px;
+    position: relative;
+    border-bottom: 4px solid black;
+    animation-name: display;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 6s;
+    opacity: 0;
+    top: 100px;
+    right: 94px;
+    z-index: 0;
+}
+
+@keyframes display{
+    from{
+        opacity: 0;
+    }
+    to{
+        rotate: 360deg;
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+.third .right .box i{
+    color: white;
+    font-size: 6rem;
+    text-align: center;
+    z-index: 3;
+}
+
+/************ OUR COLLECTIONS *****************/
+.collections{
+    background-color: black;
+    padding:  100px 70px 50px 70px;
+}
+.collections .h-primary{
+    padding: 40px;
+    margin-bottom: 50px;
+}
+.collections .collection-types h2{
+    font-size: 3rem;
+    margin: 0px 30px;
+    padding: 10px 20px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px;
+}
+.collections .collection-types p{
+    padding: 10px 25px;
+    color: white;
+}
+.collections .collection-types{
+}
+.collections .collection-types .cars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0px;
+}
+.collections .collection-types .muscular{
+    flex-direction: row-reverse;
+}
+
+
+/*************** DISCOVER BY BRAND ****************/
+.discover-brand{
+    padding:  50px 70px 70px 70px;
+}
+.brands{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+.brands img{
+    width: 70%;
+}
+.brands .car-brand{
+    /* border: 2px solid white; */
+    margin: 30px 20px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.9s;
+}
+.brands .car-brand:hover{
+    color: white;
+    transform: scale(1.2);
+}
+
+.brands #brand-1{
+    width:20%;
+}
+.brands #brand-2{
+    width:20%;
+}
+.brands #brand-2 img{
+    width:60%;
+}
+.brands #brand-3{
+    width:20%;
+}
+.brands #brand-3 img{
+    width:65%;
+}
+.brands #brand-4{
+    width:20%;
+}
+.brands #brand-4 img{
+    width:100%;
+    padding: 10px 0px;
+}
+.brands #brand-5{
+    width:20%;
+}
+.brands #brand-5 img{
+    width:100%;
+    padding: 22px 0px;
+}
+.brands #brand-6{
+    width:20%;
+}
+.brands #brand-6 img{
+    width:53%;
+}
+.brands #brand-7{
+    width:20%;
+}
+.brands #brand-7 img{
+    width:100%;
+}
+.brands #brand-8{
+    width:20%;
+}
+.brands #brand-8 img{
+    width:100%;
+    padding: 20px 0px;
+}
+.brands #brand-9{
+    width:20%;
+}
+.brands #brand-9 img{
+    width:100%;
+    padding: 6px 0px;
+}
+.brands #brand-10{
+    width:20%;
+}
+.brands #brand-10 img{
+    width:100%;
+    padding: 15px 0px;
+}
+.brands #brand-11{
+    width:20%;
+}
+.brands #brand-11 img{
+    width:100%;
+    padding: 12px 0px;
+}
+.brands #brand-12{
+    width:20%;
+}
+.brands #brand-12 img{
+    width:89%;
+}
+
+/********************** footer *********************/
+#foot{
+    list-style-type:none;
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    padding: 40px 5px;
+}
+#foot .foot-options{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#foot .foot-options .p-primary{
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    border-left: 1px solid grey;
+    padding-left: 50px;
+}
+#foot .foot-options #item1{
+    border-left: 0px solid grey;
+    padding: 0;
+}
+#foot .social-links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#foot .social-links .social{
+    margin: 50px 50px;
+    filter: invert(100%);
+    transform: scale(2);
+    padding: 20px;
+    transition: 0.9s;
+}
+#foot .social-links .social:hover{
+    transform: scale(3.2);
+}
+
+
+/************* MEDIA QUERY ********************/
+
+
+@media  only screen and (max-width:850px) {
+    *{
+        /* overflow: hidden; */
+    }
+    #navbar{
+        /* position: static; */
+        flex-direction: column;
+        width: 92%;
+    }
+    .options{
+        font-size: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #products-main {
+        background-size: contain;
+    }
+    #buying-car .text-second-main .text-second li{
+        font-size: 0.7rem;
+    }
+    #buying-car .text-second-main .text-second video{
+        width: 90%;
+    }
+    #products-main{
+        /* animation: none; */
+        background-size: cover;
+        padding-top: 22rem;
+    }
+    #products-main .text-main {
+        position: absolute;
+        top: 100px;
+    }
+    #buying{
+        justify-content: center;
+        align-items: center;
+    }
+    #buying-car .text-second-main .text-second{
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+    }
+    #buying-car .text-second-main .text-second .item{
+        margin: 0px;
+    }
+    .third{
+        flex-direction: column;
+        align-items: center;
+        padding:  0px 0px 0px 0px;
+    }
+    .third .left .heading-third .h-primary{
+        font-size: 1.5rem;
+    }
+    .third .left .searchbar input{
+        margin-top: 30px;
+        width: 70%;
+    }
+    .third .left .heading-third h1{
+        text-align: center;
+        font-size: 1.7rem;
+    }
+    .collections{
+        padding-top:100px !important;
+        padding: 0px;
+    }
+    .collections .h-primary{
+        padding: 0px;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .collections .collection-types .cars{
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom: 1px solid grey;
+    }
+    .discover-brand{
+        padding:  0px 0px 0px 0px;
+    }
+    .car-brand h3{
+        visibility: hidden;
+    }
+    #foot .foot-options{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #foot .foot-options .p-primary{
+        margin-top: 50px;
+        border-left: 1px solid black;
+        padding: 0;
+    } 
+    #foot .social-links .social{
+        display: none;
+    }
+}

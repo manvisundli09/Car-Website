@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.h-primary {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+.p-primary {
+    color: white;
+    font-family: 'Abel', sans-serif;
+}
+
+span {
+    font-family: 'Dancing Script', cursive;
+    color: red;
+}
+
+body {
+    height: 1000px;
+    /* color: white; */
+}
+
+.container {
+    max-width: 100% !important;
+    padding: 0px !important;
+}
+
+/*************** NAVBAR********* */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 14px;
+    align-items: center;
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+
+
+#navbar #logo li a{
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 25px;
+}
+#navbar #logo span{
+    color: red !important;
+    opacity: 0;
+    position: relative;
+    font-weight: 900;
+    animation-name: zoom-in;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom-in {
+    from {
+        opacity: 1;
+        left: -100px;
+    }
+
+    to {
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+.options {
+    display: flex;
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+.options li a {
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    padding: 0.1rem 0.5rem;
+    color: white;
+    border-radius: 30px;
+    margin: 0px 5px;
+    transition: 0.5s;
+}
+
+.options li a:hover {
+    /* font-family: 'Dancing Script', cursive; */
+    color: red;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.h-home {
+    opacity: 0;
+    position: relative;
+    animation-name: move-in;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+.h-about {
+    opacity: 0;
+    position: relative;
+    animation-name: move-in;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+.h-products {
+
+    opacity: 0;
+    position: relative;
+    animation-name: move-in;
+    animation-delay: 2.4s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+.h-services {
+    opacity: 0;
+    position: relative;
+    animation-name: move-in;
+    animation-delay: 2.6s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+.h-contact {
+    opacity: 0;
+    position: relative;
+    animation-name: move-in;
+    animation-delay: 2.8s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+@keyframes move-in {
+    from {
+        opacity: 1;
+        right: -1000px;
+    }
+
+    to {
+        opacity: 1;
+        right: 0px;
+    }
+}
+
+/************************** HOME **********************/
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 710px;
+}
+
+.home video {
+    width: 100%;
+    filter: brightness(0.4);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.home .text {
+    text-align: center;
+}
+
+.home .text h1 {
+    top: 0;
+    color: white;
+}
+
+.home #home-text1 {
+    font-weight: 900;
+}
+
+.home #home-text2 {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+/************************** SECOND-PAGE *********************/
+.second-page {
+    display: flex;
+    background-color: #dcdcdc;
+}
+
+.booking {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px;
+    /* border: 2px solid red; */
+}
+
+.booking .p-primary {
+    color: black;
+    font-weight: 900;
+}
+
+.booking form {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    width: 100%;
+}
+
+.booking form label {
+    padding: 10px 0px;
+}
+
+.booking form .tos {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking .booking-form .p-primary {
+    font-size: 1.3rem;
+}
+
+.booking .booking-form .input-value {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px 0px;
+}
+
+.booking form .input-value input {
+    padding: 2px 10px;
+    font-family: abel;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.booking form .submit-button {
+    margin-top: 20px;
+    width: 25%;
+    border-radius: 20px;
+    background-color: black;
+    font-weight: 700;
+    color: white;
+    font-size: 2rem;
+    font-family: abel;
+    border: 2px solid grey;
+}
+
+.second-page .login {
+    background-color: rgb(243, 241, 241);
+    margin: 250px 50px 685px 155px;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 20px 20px grey;
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.second-page .login .login-id {
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.second-page .login .buttons {
+    display: flex;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.second-page .login .log {
+    border-right: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 8px 12px;
+    font-weight: 500;
+    transition: 0.9s;
+}
+
+.second-page .login .log:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
+}
+
+.second-page .login .sign {
+    border-left: none;
+    padding: 8px 12px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-weight: 500;
+    transition: 0.9s;
+}
+
+.second-page .booking .input-value select {
+    border-radius: 10px;
+    width: 50%;
+    font-size: 1.2rem;
+    margin-left: 12px;
+    border: 2px solid black
+}
+
+.second-page .login .sign:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
+}
+
+/**************FOOTER**********/
+#foot {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    padding: 40px 5px;
+}
+
+#foot .foot-options {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#foot .foot-options .p-primary {
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    border-left: 1px solid grey;
+    padding-left: 50px;
+}
+
+#foot .foot-options #item1 {
+    border-left: 0px solid grey;
+    padding: 0;
+}
+
+#foot .social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#foot .social-links .social {
+    margin: 50px 50px;
+    filter: invert(100%);
+    transform: scale(2);
+    padding: 20px;
+    transition: 0.9s;
+}
+
+#foot .social-links .social:hover {
+    transform: scale(3.2);
+}
+
+/************************** MEDIA QUERY ******************/
+@media only screen and (max-width:850px) {
+    #navbar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .options {
+        font-size: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .home {
+        height: 225px;
+    }
+
+    .home #home-text1 {
+        /* font-weight: 900; */
+        position: absolute;
+        font-size: 20px;
+        top: 90px;
+        left: 120px;
+    }
+
+    .home #home-text2 {
+        font-size: 1.7rem;
+        font-weight: 900;
+        position: absolute;
+        top: 120px;
+        left: 95px;
+    }
+
+    .second-page {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .booking form .input-value input {
+        width: 90%;
+    }
+
+    .booking form .input-value .booking form .submit-button {
+        width: 50%;
+    }
+
+    .second-page .login {
+        margin: 100px 0px 100px 0px;
+        width: 70%;
+    }
+
+    #foot .foot-options {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #foot .foot-options .p-primary {
+        margin-top: 50px;
+        border: none;
+        padding: 0;
+    }
+
+    #foot .social-links .social {
+        display: none;
+    }
+
+    .booking form .tos .p-primary {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .booking form .tos .p-primary input {
+        flex-basis: content;
+    }
+
+    .booking form .submit-button {
+        width: 50%;
+    }
+    .second-page .booking .input-value select{
+        width: 90%;
+    }
+}

@@ -1,0 +1,60 @@
+*{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#navbar{
+    width: 97%;
+    flex-direction: column;
+    position: absolute;
+}
+
+#navbar .options{
+    font-size: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+#key-achievements .heading h1{
+    font-size: 2rem;
+}
+.achievements{
+    flex-direction: column;
+    align-items: center;
+}
+.achievements li{
+    width: 70%;
+}
+.achievements li .text{
+    height: 18.5rem;
+    opacity:1;
+    position: static;
+}
+.achievements li .text{
+    padding: 0px;
+    display: none;
+}
+#key-achievements .achievements li img{
+    width: 100%;
+}
+#recent-cars #carouselExampleCaptions img{
+    height: 100%;
+    width: 100%;
+}
+
+#foot .foot-options{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#foot .foot-options .p-primary{
+    margin-top: 50px;
+    border: none;
+    padding: 0;
+}
+#foot .social-links .social{
+    display: none;
+}

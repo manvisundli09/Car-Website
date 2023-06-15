@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.h-primary{
+    font-family: 'Josefin Sans', sans-serif;    
+    color: white;
+}
+
+.p-primary{
+    color: white;
+    font-family: 'Abel', sans-serif;
+}
+
+span{
+    font-family: 'Dancing Script', cursive;
+}
+body{
+    height: 1000px;
+    /* color: white; */
+}
+.container{
+    max-width: 100% !important;
+    padding: 0px !important;
+}
+/*************** NAVBAR********* */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 14px;
+    align-items: center;
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+
+
+#navbar #logo li a{
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 25px;
+}
+#navbar #logo span{
+    color: red !important;
+    opacity: 0;
+    position: relative;
+    font-weight: 900;
+    animation-name: zoom-in;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom-in{
+    from{
+        opacity: 1;
+        left:-100px;
+    }
+    to{
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+.options{
+    display: flex;
+    list-style-type: none;
+    font-size: 1rem;
+}
+.options li a{
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    padding: 0.1rem  0.5rem;
+    color: white;
+    border-radius: 30px;
+    margin: 0px 5px;
+    transition: 0.5s;
+}
+.options li a:hover{
+    /* font-family: 'Dancing Script', cursive; */
+    color: red;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.h-home{
+    opacity: 0;
+    position: relative;
+    animation-name: move-in;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+.h-about{
+    opacity: 0;
+    position: relative;
+    animation-name: move-in;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+.h-products{
+    
+    opacity: 0;
+    position: relative;
+    animation-name: move-in;
+    animation-delay: 2.4s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+.h-services{
+    opacity: 0;
+    position: relative;
+    animation-name: move-in;
+    animation-delay: 2.6s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+
+@keyframes move-in{
+    from{
+        opacity: 1;
+        right: -1000px;
+    }
+    to{
+        opacity: 1;
+        right: 0px;
+    }
+}
+
+/*************** HOME********* */
+#home{
+    /* height: 100%; */
+    background-color: black;
+}
+#home video{
+    width: 100%;
+    z-index: 3;
+}
+
+
+/**************KEY-ACHIEVEMENTS**********/
+#key-achievements{
+    background-color: black ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#key-achievements .heading h1{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    display: block;
+}
+#key-achievements .heading h1 span{
+    color: red;
+    text-decoration: dashed;
+    line-height: 100px;
+}
+#key-achievements .heading .p-primary{
+    text-align: center;
+}
+
+.achievements{
+    padding: 5rem 2rem;
+    display: flex;
+    width: 100%;
+    /* border: 2px solid tomato; */
+}
+
+.achievements li{
+    list-style-type: none;
+    transition: 0.7s;
+    padding: 10px;
+}
+
+.achievements li:hover{
+    transform: scale(1.1);
+}
+
+.achievements li .text{
+    font-size: 1.7rem;
+    margin: 0px;
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+    padding: 270px 5px 5px 5px;
+}
+
+.achievements li .text:hover{
+    color: white;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+    visibility: visible;
+}
+
+.achievements .heading-name{
+    font-size: 1rem;
+    font-weight: 600;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px dotted;
+    border-top: 0px;
+    text-align: center;
+    padding: 5px;
+}
+#key-achievements .achievements li img{
+    width: 100%;
+    border-radius: 30px;
+    z-index: 1;
+    height: 70%;
+}
+
+
+
+/**************RECENT CARS**********/
+#recent-cars{
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+}
+#recent-cars .heading h1{
+    text-align: center;
+    font-size: 42px;
+    color: white;
+}
+#recent-cars .heading h1 span{
+    color: red;
+    text-decoration: dashed;
+    line-height: 100px;
+}
+#recent-cars .heading .p-primary{
+    text-align: center;
+    font-size: 1.3rem;
+}
+.carousel-indicators{
+    text-align: center;
+    align-items: center;
+}
+
+/**************FOOTER**********/
+#foot{
+    list-style-type:none;
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    padding: 40px 5px;
+}
+#foot .foot-options{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#foot .foot-options .p-primary{
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    border-left: 1px solid grey;
+    padding-left: 50px;
+}
+#foot .foot-options #item1{
+    border-left: 0px solid grey;
+    padding: 0;
+}
+#foot .social-links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#foot .social-links .social{
+    margin: 50px 50px;
+    filter: invert(100%);
+    transform: scale(2);
+    padding: 20px;
+    transition: 0.9s;
+}
+#foot .social-links .social:hover{
+    transform: scale(3.2);
+}
